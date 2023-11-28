@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="JQuery.js"></script>
+    <script src="script.js"></script>
+    <title>Registro</title>
+    <style>
+        .error-message {
+          color: red;
+          margin-top: 10px;
+        }
+      </style>
+</head>
+<body>
+    <h2>REGISTRO DE ESTUDIANTES</h2>
+
+    <!-- Formulario de login -->
+    <form id="loginForm">
+      <!-- Campo para el nombre -->
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" name="name" required><br>
+  
+      <!-- Campo para los apellidos -->
+      <label for="apellido">Apellido Paterno:</label>
+      <input type="text" id="apellidoPat" name="apellidoPat" required><br>
+
+      <label for="apellido">Apellido Materno:</label>
+      <input type="text" id="apellidoMat" name="apellidoMat" required><br>
+  
+      <label for="fechaNac">Fecha Nacimiento:</label>
+      <input type="date" id="fechaNac" name="fechaNac" required><br>
+
+
+       <label for="carrera">Carrera:</label> 
+      <select name="carrera" id="carrera" required>
+        <option value="1">Ing. Sistemas</option >
+        <option value="2">Lic. Gastronomia</option>
+        <option value="3">Phd. Medicina</option>
+      </select>
+    
+    
+
+
+      <!-- Botón para registrarse -->
+      <button type="button" id="registrarBoton">REGISTRAR</button>
+      <!-- Botón para mostrar registro -->
+      <button type="button" id="mostrarBoton">MOSTRAR</button>
+    
+    </form>
+  
+    <!-- Contenedor para mostrar mensajes de error -->
+    <div class="error-message" id="errorMessage"></div>
+
+
+    
+</body>
+</html>
